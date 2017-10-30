@@ -1,0 +1,23 @@
+<ons-card class="post">
+    <ons-list-item class="post_title">
+      <div class="left">
+        <img class="list-item__thumbnail" src="https://avatars0.githubusercontent.com/u/6152046?v=4&s=40" >
+      </div>
+      <div class="center">
+        <div class="list-item__title"><b>{{Name}}</b></div>
+        <div class="list-item__subtitle" style="font-size: 12px">1 HOUR AGO</div>
+      </div>
+    </ons-list-item>
+
+    <div style="text-align: center; position: relative;" ondblclick="like(1)">
+      <ons-icon size="150px" id="post-like-1" class="post-like" icon="ion-ios-heart"></ons-icon>
+      <img class="post-image" src="{{photo}}">
+    </div>
+
+    <ons-list-item class="post-button-bar" modifier="nodivider">
+      <div class="center" style="padding-top: 0px">
+        <ons-button class="post-button" modifier="quiet" onclick="like(1)"><ons-icon id="button-post-like-1" icon="fa-thumbs-o-up"></ons-icon> {{likes}}</ons-button>        
+      </div>
+    </ons-list-item>
+    <div class="post-caption"><b>{{title}}</b> <br>{{description}} </div>
+  </ons-card>
